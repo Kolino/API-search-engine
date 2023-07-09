@@ -1,0 +1,70 @@
+.book {
+  * {
+    margin-bottom: 1rem;
+  }
+  background-color: rgb(210, 255, 255);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 300px;
+  height: 600px;
+
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+
+  transition: 0.5s;
+  &:hover {
+    background-color: rgb(180, 255, 255);
+  }
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__img {
+    width: 150px;
+    height: auto;
+    border: 3px solid rgb(0, 200, 200);
+    &__error {
+      width: 200px;
+      height: auto;
+    }
+  }
+
+  &__description {
+    padding: 0 10px;
+  }
+
+  &__modal {
+    &__container {
+      * {
+        margin: 0.5rem;
+      }
+      background-color: rgb(210, 255, 255);
+
+      border-radius: 20px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: center;
+
+      &__title {
+        font-size: 1.5rem;
+      }
+
+      &__img {
+        width: 200px;
+        height: auto;
+        border: 3px solid rgb(0, 200, 200);
+      }
+    }
+  }
+}
