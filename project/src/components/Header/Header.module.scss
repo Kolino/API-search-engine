@@ -1,0 +1,11 @@
+.header {
+  margin: 1rem 0;
+  text-align: center;
+  &__main_heading {
+    margin-bottom: 0.5rem;
+    color: rgb(0, 200, 200);
+  }
+  &__sub_heading {
+    font-style: italic;
+  }
+}
