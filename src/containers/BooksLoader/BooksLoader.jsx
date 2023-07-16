@@ -8,7 +8,6 @@ const BooksLoader = ({ searchTerm }) => {
   const [err, setErr] = useState(null);
   const [startIndex, setStartIndex] = useState(0);
 
-  // TODO: write this without the if statements
   // Retrieving books from API
   useEffect(() => {
     if (searchTerm != "") {
@@ -33,8 +32,6 @@ const BooksLoader = ({ searchTerm }) => {
     }
   }, [searchTerm]);
 
-  // TODO: is using <></> so often appropriate?
-  // TODO: p element not re-rendering
   return (
     <>
       {isLoading && <p>Loading...</p>}
@@ -44,7 +41,7 @@ const BooksLoader = ({ searchTerm }) => {
             books={books}
             startIndex={startIndex}
           />
-          <p>{`Page ${startIndex % 10} of ${Math.ceil(
+          <p>{`Page ${(startIndex / 10) + 1} of ${Math.ceil(
             books.length / 10
           )}`}</p>
           <div>

@@ -43,7 +43,6 @@ export const displayBookInfoProperty = (
     language: "Language",
   };
 
-  // Authors is stored as an array that is to be joined
   if (bookInfoObj[property] && property === "authors")
     return `By ${bookInfoObj[property].join(", ")}`;
 

@@ -3,10 +3,6 @@ import Header from "./components/Header/Header";
 import SearchBar from "./components/SearchBar/SearchBar";
 import BooksLoader from "./containers/BooksLoader/BooksLoader";
 
-// TODO: fix page number
-// TODO: style page buttons
-// TODO: modal transitions
-
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
 
